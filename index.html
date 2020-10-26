@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3c2cd28cc4.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script> -->
+
+    <!-- POLICES -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <img src="./public/img/logo/ohmyfood@2x.svg" alt="Logo du site">
+    </header>
+
+    <div class="container">
+        <section class="location">
+            <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+        </section>
+    
+        <section class="explorer">
+            <h3 class="explorer__title">Réserver le menu qui vous convient</h3>
+            <p class="explorer__desc">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a href="#" class="btn">Explorer nos restaurants</a>
+        </section>
+    
+        <nav>
+            <h3 class="section__title">Fonctionnement</h3>
+
+            <div class="section__content">
+                <div class="section__item">
+                    <span class="step">1</span>
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>
+                        Choisissez un restaurant
+                    </p>
+                </div>
+                <div class="section__item">
+                    <span class="step">2</span>
+                    <i class="fas fa-list-ul"></i>
+                    <p>
+                        Composez votre menu
+                    </p>
+                </div>
+                <div class="section__item section__item--active">
+                    <span class="step">3</span>
+                    <i class="fas fa-store"></i>
+                    <p>
+                        Dégustez au restaurant
+                    </p>
+                </div>
+            </div>
+        </nav>
+    
+        <section class="restaurants">
+    
+            <h3 class="section__title">Restaurants</h3>
+    
+            <article class="card">
+                <a href="./menus/la-palette-du-gout.html">
+
+                    <div class="card__image">
+                        <img src="./public/img/restaurants/la-palette-du-gout.jpg" alt="Restaurant La palette du goût">
+                    </div>
+    
+                    <div class="card__infos">
+                        <div>
+                            <h4>La palette du goût</h4>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="liked">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+    
+                    <span class="new">Nouveau</span>
+                </a>
+            </article>
+    
+            
+            <article class="card">
+                <a href="./menus/la-note-enchantee.html">
+                    <div class="card__image">
+                        <img src="./public/img/restaurants/la-note-enchantee.jpg" alt="Restaurant La note enchantée">
+                    </div>
+        
+                    <div class="card__infos">
+                        <div>
+                            <h4>La note enchantée</h4>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="liked">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+        
+                    <span class="new">Nouveau</span>
+                </a>
+            </article>
+    
+            <article class="card">
+                <a href="./menus/a-la-francaise.html">
+                    <div class="card__image">
+                        <img src="./public/img/restaurants/a-la-francaise.jpg" alt="Restaurant à la française">
+                    </div>
+    
+                    <div class="card__infos">
+                        <div>
+                            <h4>À la française</h4>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="liked">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>    
+
+            <article class="card">
+                <a href="./menus/le-delice-des-sens.html">
+                    <div class="card__image">
+                        <img src="./public/img/restaurants/le-delice-des-sens.jpg" alt="Restaurant Le délice du sens">
+                    </div>
+    
+                    <div class="card__infos">
+                        <div>
+                            <h4>Le délice des sens</h4>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="liked">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+    
+        </section>
+    </div>
+
+    <footer>
+        <img src="./public/img/logo/ohmyfood@2x_white.svg" alt="Logo du site">
+        <ul>
+            <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:tom.texierpro@gmail.com">Contact</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

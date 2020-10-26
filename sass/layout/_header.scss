@@ -1,0 +1,32 @@
+header {
+    background-color: #fff;
+    padding: 15px;
+    @include boxShadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    a {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        color: #000;
+        font-size: 20px;
+    }
+
+    img {
+        width: 200px;
+        margin: auto;
+
+    }
+
+    &.header--sticky {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+}

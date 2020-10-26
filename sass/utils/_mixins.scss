@@ -1,0 +1,22 @@
+@mixin boxShadow($top:5px, $color:gray){
+    box-shadow: 0 $top 10px -5px $color;
+}
+
+@mixin bgColor($color:$light-gray, $amount:0) {
+    background-color: darken($color, $amount);
+}
+
+@mixin linearGradient($color:$color-primary) {
+    background: linear-gradient(
+        to top, 
+        $color, 
+        lighten(desaturate(adjust-hue($color, 13), 1.04), 1.18), 
+        lighten(desaturate(adjust-hue($color, 26), 2.53), 2.75),
+        lighten(saturate(adjust-hue($color, 39), 6.93), 7.06),
+        lighten(saturate(adjust-hue($color, 49), 34.31), 13.73)
+    );
+}
+
+@mixin paddingSection {
+    padding: 40px 20px;
+}

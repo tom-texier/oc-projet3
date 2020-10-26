@@ -1,0 +1,32 @@
+.menu {
+
+    position: relative;
+
+    &__image {
+        height: 250px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            position: fixed;
+        }
+    }
+
+    &__infos {
+        background-color: $light-gray;
+
+        position: relative;
+
+        top: -80px;
+
+        border-radius: 35px 35px 0 0;
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 30px 20px;
+        }
+
+    }
+
+}
