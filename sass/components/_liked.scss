@@ -9,6 +9,8 @@
     cursor: pointer;
 
     i {
+        z-index: 1000;
+
         &:nth-of-type(1) {
             position: relative;
             z-index: 2;
