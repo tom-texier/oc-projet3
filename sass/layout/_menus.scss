@@ -89,6 +89,13 @@
                     font-size: 14px;
                     font-weight: 500;
                 }
+
+                .selected {
+                    display: flex;
+                    align-items: center;
+
+                    background-color: $color-tertiary;
+                }
             }
     
         }
