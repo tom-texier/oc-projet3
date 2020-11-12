@@ -1,0 +1,19 @@
+{
+  "name": "oc-projet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tom-texier/oc-projet3.git"
+  },
+  "author": "Tom Texier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tom-texier/oc-projet3/issues"
+  },
+  "homepage": "https://github.com/tom-texier/oc-projet3#readme"
+}
