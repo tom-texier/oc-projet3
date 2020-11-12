@@ -190,6 +190,16 @@ header.header--sticky {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+.menu__infos-desc .plat:nth-of-type(1) {
+  animation-delay: 100ms;
+}
+.menu__infos-desc .plat:nth-of-type(2) {
+  animation-delay: 200ms;
+}
+.menu__infos-desc .plat:nth-of-type(3) {
+  animation-delay: 300ms;
 }
 .menu__infos-desc .plat:hover .selected {
   width: 60px;
@@ -198,7 +208,7 @@ header.header--sticky {
   transform: rotate(360deg);
 }
 .menu__infos-desc .plat:hover p {
-  max-width: 150px;
+  max-width: 175px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -212,7 +222,7 @@ header.header--sticky {
 .menu__infos-desc .plat .intitule {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
 }
 .menu__infos-desc .plat .intitule p:nth-of-type(1) {
   font-weight: 600;
