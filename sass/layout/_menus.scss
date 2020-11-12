@@ -78,6 +78,13 @@
                     transform: rotate(360deg);
                 }
 
+                &:hover p {
+                    max-width: 150px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
                 .infos {
                     display: flex;
                     justify-content: space-between;
@@ -91,9 +98,7 @@
                     width: auto;
 
                     p {
-                        // white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                        
                     }
     
                     p:nth-of-type(1) {

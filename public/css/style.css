@@ -197,6 +197,12 @@ header.header--sticky {
 .menu__infos-desc .plat:hover .selected i {
   transform: rotate(360deg);
 }
+.menu__infos-desc .plat:hover p {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu__infos-desc .plat .infos {
   display: flex;
   justify-content: space-between;
@@ -207,10 +213,6 @@ header.header--sticky {
   display: flex;
   flex-direction: column;
   width: auto;
-}
-.menu__infos-desc .plat .intitule p {
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__infos-desc .plat .intitule p:nth-of-type(1) {
   font-weight: 600;
@@ -333,6 +335,14 @@ nav .section__content .section__item {
   font-weight: bold;
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+nav .section__content .section__item:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+nav .section__content .section__item:hover i {
+  color: #9356DC !important;
 }
 nav .section__content .section__item .step {
   background-color: #9356DC;
