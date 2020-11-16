@@ -45,6 +45,7 @@ nav {
     & .section__content {
         display: flex;
         flex-flow: wrap row;
+        justify-content: space-around;
 
         .section__item {
             padding: 20px;
@@ -90,6 +91,11 @@ nav {
                 i {
                     color: $color-primary!important;
                 }
+            }
+
+            @include tablet-only {
+                width: 30%;
+                padding: 10px 20px;
             }
         }
     }
