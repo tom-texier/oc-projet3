@@ -45,6 +45,7 @@ nav {
     & .section__content {
         display: flex;
         flex-flow: wrap row;
+        justify-content: space-around;
 
         .section__item {
             padding: 20px;
@@ -58,6 +59,16 @@ nav {
             font-weight: bold;
             display: inline-flex;
             align-items: center;
+            cursor: pointer;
+            transition: .4s;
+
+            &:hover {
+                background-color: rgba($color-primary, .2);
+
+                i {
+                    color: $color-primary!important;
+                }
+            }
 
             .step {
                 background-color: $color-primary;
@@ -81,12 +92,52 @@ nav {
                     color: $color-primary!important;
                 }
             }
+
+            @include tablet-only {
+                width: 30%;
+                padding: 10px 20px;
+            }
+
+            @include laptop-only {
+                width: 30%;
+                padding: 10px 20px;
+            }
+
+            @include large-screen {
+                width: 30%;
+                padding: 20px;
+            }
         }
+    }
+
+    @include large-screen {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
 section.restaurants {
     @include paddingSection;
+
+    @include large-screen {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        .card {
+            transition: transform .5s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 
     .card {
         width: 100%;
@@ -99,6 +150,9 @@ section.restaurants {
         a {
             text-decoration: none;
             color: inherit;
+            display: block;
+            position: relative;
+            z-index: 5;
         }
 
         &__image {
@@ -106,6 +160,7 @@ section.restaurants {
             overflow: hidden;
             img {
                 width: 100%;
+                min-height: 180px;
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
@@ -140,6 +195,19 @@ section.restaurants {
             font-size: 15px;
             padding: 5px 10px;
             border-radius: 3px;
+            z-index: 5;
+        }
+
+        @include tablet-only {
+            width: 49%;
+        }
+
+        @include laptop-only {
+            width: 32%;
+        }
+
+        @include large-screen {
+            width: 32%;
         }
     }
 }

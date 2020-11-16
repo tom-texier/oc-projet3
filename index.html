@@ -10,13 +10,15 @@
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/3c2cd28cc4.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script> -->
 
     <!-- POLICES -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
     
     <header>
         <img src="./public/img/logo/ohmyfood@2x.svg" alt="Logo du site">
@@ -64,88 +66,96 @@
         <section class="restaurants">
     
             <h3 class="section__title">Restaurants</h3>
-    
-            <article class="card">
-                <a href="./menus/la-palette-du-gout.html">
 
-                    <div class="card__image">
-                        <img src="./public/img/restaurants/la-palette-du-gout.jpg" alt="Restaurant La palette du goût">
-                    </div>
-    
+            <div class="cards">
+                <article class="card">
+                    <a href="./menus/la-palette-du-gout.html">
+                        <div class="card__image">
+                            <img src="./public/img/restaurants/la-palette-du-gout.jpg" alt="Restaurant La palette du goût">
+                        </div>
+                    </a>
                     <div class="card__infos">
                         <div>
-                            <h4>La palette du goût</h4>
-                            <p>Ménilmontant</p>
+                            <a href="./menus/la-palette-du-gout.html">
+                                <h4>La palette du goût</h4>
+                                <p>Ménilmontant</p>
+                            </a>
+                            </div>
+                            
+                        <div class="liked">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+        
+                    <span class="new">Nouveau</span>
+                </article>
+        
+                
+                <article class="card">
+                    <a href="./menus/la-note-enchantee.html">
+                        <div class="card__image">
+                            <img src="./public/img/restaurants/la-note-enchantee.jpg" alt="Restaurant La note enchantée">
+                        </div>
+                    </a>
+                    <div class="card__infos">
+                        <div>
+                            <a href="./menus/la-note-enchantee.html">
+                                <h4>La note enchantée</h4>
+                                <p>Charonne</p>
+                            </a>
                         </div>
                         <div class="liked">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
-    
-                    <span class="new">Nouveau</span>
-                </a>
-            </article>
-    
             
-            <article class="card">
-                <a href="./menus/la-note-enchantee.html">
-                    <div class="card__image">
-                        <img src="./public/img/restaurants/la-note-enchantee.jpg" alt="Restaurant La note enchantée">
-                    </div>
-        
-                    <div class="card__infos">
-                        <div>
-                            <h4>La note enchantée</h4>
-                            <p>Charonne</p>
-                        </div>
-                        <div class="liked">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-        
                     <span class="new">Nouveau</span>
-                </a>
-            </article>
-    
-            <article class="card">
-                <a href="./menus/a-la-francaise.html">
-                    <div class="card__image">
-                        <img src="./public/img/restaurants/a-la-francaise.jpg" alt="Restaurant à la française">
-                    </div>
-    
+                </article>
+        
+                <article class="card">
+                    <a href="./menus/a-la-francaise.html">
+                        <div class="card__image">
+                            <img src="./public/img/restaurants/a-la-francaise.jpg" alt="Restaurant à la française">
+                        </div>
+                    </a>
+        
                     <div class="card__infos">
                         <div>
-                            <h4>À la française</h4>
-                            <p>Cité Rouge</p>
+                            <a href="./menus/a-la-francaise.html">
+                                <h4>À la française</h4>
+                                <p>Cité Rouge</p>
+                            </a>
                         </div>
                         <div class="liked">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
-                </a>
-            </article>    
-
-            <article class="card">
-                <a href="./menus/le-delice-des-sens.html">
-                    <div class="card__image">
-                        <img src="./public/img/restaurants/le-delice-des-sens.jpg" alt="Restaurant Le délice du sens">
-                    </div>
+                </article>    
     
+                <article class="card">
+                    <a href="./menus/le-delice-des-sens.html">
+                        <div class="card__image">
+                            <img src="./public/img/restaurants/le-delice-des-sens.jpg" alt="Restaurant Le délice du sens">
+                        </div>
+                    </a>
+        
                     <div class="card__infos">
                         <div>
-                            <h4>Le délice des sens</h4>
-                            <p>Folie-Méricourt</p>
+                            <a href="./menus/le-delice-des-sens.html">
+                                <h4>Le délice des sens</h4>
+                                <p>Folie-Méricourt</p>
+                            </a>
                         </div>
                         <div class="liked">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
-                </a>
-            </article>
+                </article>
+            </div>
     
         </section>
     </div>

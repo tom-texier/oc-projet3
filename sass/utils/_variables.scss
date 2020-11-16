@@ -5,3 +5,9 @@ $color-tertiary: #99E2D0;
 $light-gray: #F6F6F6;
 
 $font-color: #353535;
+
+$breakpoints: (
+    mobile: 600px,
+    tablet: 768px,
+    laptop: 1200px
+)
