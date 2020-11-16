@@ -97,12 +97,47 @@ nav {
                 width: 30%;
                 padding: 10px 20px;
             }
+
+            @include laptop-only {
+                width: 30%;
+                padding: 10px 20px;
+            }
+
+            @include large-screen {
+                width: 30%;
+                padding: 20px;
+            }
         }
+    }
+
+    @include large-screen {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
 section.restaurants {
     @include paddingSection;
+
+    @include large-screen {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        .card {
+            transition: transform .5s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 
     .card {
         width: 100%;
@@ -125,6 +160,7 @@ section.restaurants {
             overflow: hidden;
             img {
                 width: 100%;
+                min-height: 180px;
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
@@ -159,6 +195,19 @@ section.restaurants {
             font-size: 15px;
             padding: 5px 10px;
             border-radius: 3px;
+            z-index: 5;
+        }
+
+        @include tablet-only {
+            width: 49%;
+        }
+
+        @include laptop-only {
+            width: 32%;
+        }
+
+        @include large-screen {
+            width: 32%;
         }
     }
 }

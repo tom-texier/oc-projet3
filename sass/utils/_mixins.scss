@@ -34,3 +34,9 @@
         @content;
     }
 }
+
+@mixin large-screen {
+    @media (min-width: map-get($breakpoints, laptop)){
+        @content;
+    }
+}

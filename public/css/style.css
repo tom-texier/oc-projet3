@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   animation: load forwards;
   animation-duration: 1s;
-  animation-delay: 1.096810896s;
+  animation-delay: 1.543397425s;
 }
 #preloader #loader {
   width: 150px;
@@ -203,6 +203,7 @@ header.header--sticky {
 
 .menu {
   position: relative;
+  background-color: #F6F6F6;
 }
 .menu__image {
   height: 250px;
@@ -212,6 +213,11 @@ header.header--sticky {
   width: 100%;
   position: fixed;
 }
+@media (min-width: 1200px) {
+  .menu__image {
+    height: 500px;
+  }
+}
 .menu__infos {
   background-color: #F6F6F6;
   position: relative;
@@ -220,6 +226,13 @@ header.header--sticky {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  .menu__infos {
+    padding-left: 10%;
+    padding-right: 10%;
+    top: 0px;
+  }
 }
 .menu__infos-title {
   display: flex;
@@ -244,7 +257,14 @@ header.header--sticky {
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
 }
+.menu__infos-desc .plats {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 .menu__infos-desc .plat {
+  width: 100%;
   animation: appear 1s forwards;
   opacity: 0;
   background-color: #fff;
@@ -317,8 +337,23 @@ header.header--sticky {
 .menu__infos-desc .plat .selected i {
   transition: transform 0.5s;
 }
+@media (min-width: 600px) and (max-width: 768px) {
+  .menu__infos-desc .plat {
+    width: 49%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .menu__infos-desc .plat {
+    width: 32%;
+  }
+}
+@media (min-width: 1200px) {
+  .menu__infos-desc .plat {
+    width: 32%;
+  }
+}
 .menu__infos a.btn {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 @keyframes appear {
@@ -335,6 +370,8 @@ footer {
   background-color: #353535;
   padding: 20px;
   width: 100%;
+  position: relative;
+  z-index: 100;
 }
 footer img {
   width: 100px;
@@ -446,9 +483,45 @@ nav .section__content .section__item--active i {
     padding: 10px 20px;
   }
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  nav .section__content .section__item {
+    width: 30%;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  nav .section__content .section__item {
+    width: 30%;
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 
 section.restaurants {
   padding: 40px 20px;
+}
+@media (min-width: 1200px) {
+  section.restaurants {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  section.restaurants .card {
+    transition: transform 0.5s;
+  }
+  section.restaurants .card:hover {
+    transform: scale(1.05);
+  }
+}
+section.restaurants .cards {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 section.restaurants .card {
   width: 100%;
@@ -471,6 +544,7 @@ section.restaurants .card__image {
 }
 section.restaurants .card__image img {
   width: 100%;
+  min-height: 180px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -500,6 +574,22 @@ section.restaurants .card .new {
   font-size: 15px;
   padding: 5px 10px;
   border-radius: 3px;
+  z-index: 5;
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  section.restaurants .card {
+    width: 49%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  section.restaurants .card {
+    width: 32%;
+  }
+}
+@media (min-width: 1200px) {
+  section.restaurants .card {
+    width: 32%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
