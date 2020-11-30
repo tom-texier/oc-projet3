@@ -5,8 +5,20 @@ footer {
     position: relative;
     z-index: 100;
 
-    img {
-        width: 100px;
+    @include large-screen {
+        text-align: center;
+    }
+
+    @include laptop-only {
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 25px;
+        font-weight: 400;
+
+        color: #FFF;
     }
 
     ul {
